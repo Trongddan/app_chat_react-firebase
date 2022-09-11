@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  p {
+    margin: 0 !important;
+  }
+}
+.sideBar {
+  background: rgb(76, 74, 212);
+  span {
+    color: white;
+  }
+  height: 100vh;
+  .sideBar_userInfo > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    height: 56px;
+  }
+  .sideBar_roomlist {
+    height: calc(100vh - 56px);
+    color: white !important;
+  }
+  .room_item{
+    display: block !important;
+    padding: 5px 15px;
+  }
+}
+.chatwindow {
+  height: 100vh;
+  .chatwindow_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    height: 70px !important;
+    border-bottom: 2px solid rgb(77, 10, 202);
+    .room_title {
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .groupButtonUser {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.chatwindow_content {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .list-message{
+      max-height: 100%;
+      overflow-y: scroll;
+  }
+
+  .forminput_content {
+    margin-left: 15px;
+    width: 400px;
+    border: 1px solid rgb(190, 186, 186);
+    input {
+      width: 400px;
+    }
+    display: flex;
+    border-radius: 2px;
+    padding: 2px 2px 10px 0px;
+  }
+}
+.message {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  .message_auth {
+    margin-left: 10px;
+    .name {
+      margin-left: 5px;
+      font-weight: bold;
+    }
+    .date {
+      margin-left: 15px;
+      font-style: 10px;
+      color: #a7a7a7;
+    }
+  }
+  .message_content {
+    margin-left: 40px;
+  }
+}

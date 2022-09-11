@@ -15,9 +15,11 @@ const AuthProvider = ({children}) => {
             setUser({displayName,photoURL,email,uid});
             setLoading(false);
             navigate("/");
-        }else{
+            return;
+        }   
+            setLoading(false)
             navigate("/login");
-        }
+        
     })
     return()=>{
         unSubcribed();
